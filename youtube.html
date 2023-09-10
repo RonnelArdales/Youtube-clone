@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <nav class="header">
+        <div class="left-section">
+            <div>
+                <img src="image/icons/hamburger-menu.png" class="menu-icon" alt="">
+            </div>
+            <div class="youtube-icon-container">
+                <img src="image/YouTube Logo.png" class="youtube-icon"  alt="">
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <div class="middle-container">
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="search-input">   
+                    <button class="close-button">
+                        <img src="image/icons/close-button.png" alt="" height="23" style="padding-top: 5px;">
+                    </button>
+                </div>
+
+                <button class="search-button">
+                    <img src="image/icons/icon-search.png" style="height: 20px;" alt="">
+                </button>
+
+                <button class="mic-button-container">
+                    <img src="image/icons/icon-microphone.png" alt="" class="mic-button-icon">
+
+                    <div class="button-description">
+                        <span></span>
+                        Mic
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="right-container">
+                <img class="icon-right create-icon" src="image/icons/icon-create-video.png" alt="" >
+
+                <img class="icon-right notification-icon" src="image/icons/icon-notification.png" alt="">
+
+                <img src="image/user_profile.jpg" class="profile_pic"alt="" >
+            </div>
+        </div>
+    </nav>
+
+    <nav class="sidebar">
+        <div class="sidebar-content">
+            <img src="image/icons/icon-home.png" height="21" alt="">
+            <p >Home</p>
+        </div>
+        <div class="sidebar-content">
+            <img src="image/icons/icon-shorts.png" height="21" alt="">
+            <p>Shorts</p>
+        </div>
+        <div class="sidebar-content">
+            <img src="image/icons/icon-subscription.png" height="21" alt="">
+            <p>Subscriptions</p>
+        </div>
+        <div class="sidebar-content">
+            <img src="image/icons/icon-library.png" height="21" alt="">
+            <p>Library</p>
+        </div>
+    </nav>
+
+    <main>
+        <div style="
+        background-color: white;   
+            margin-left: 8px;
+            margin-right: 8px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 56px;
+            overflow: hidden;
+            z-index: 5;
+          ">
+                    <div class="left-arrow-container">
+                        <div class="left-transparent-arrow-container">
+                            <img id="left-arrow" src="image/icons/arrow-left.png" alt="" height="12" style="padding-left: 25px;">
+                        </div>
+                        <div class="left-transparent">
+          
+                        </div>
+                    </div>
+                <div class="category-content">
+                    <p>All</p>
+                    <p>Mixes</p>
+                    <p>Music</p>
+                    <p>Computer keyboard</p>
+                    <p>HTML</p>
+                    <p>Philippine Music</p>
+                    <p>Philippine Music</p>
+                    <p>Philippine Music</p>
+                    <p>Computer Science</p>
+                    <p>Ben&Ben</p>
+                    <p>Acoustic guitar</p>
+                    <p>Gaming</p>
+                    <p>Live</p>
+                    <p>News</p>
+                    <p>Indie Music</p>
+                    <p>Manga</p>
+                </div>
+
+                <div class="right-arrow-container">
+                    <div class="right-transparent">
+      
+                    </div>
+                    <div class="right-transparent-arrow-container">
+                        <img id="right-arrow" src="image/icons/arrow-right.png" alt="" height="12" style="padding-left: 15px;">
+                    </div>
+                </div>
+        </div>
+        <div class="video-container">
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Updated Weeb</p>
+                        </div>
+                        <div>
+                            <p class="video-status">22k views &#183; 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image4.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile5.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Create a Navbar using HTML and CSS | html & css tutorial</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Coding with programmer</p>
+                        </div>
+                        <div>
+                            <p class="video-status">11 views &#183; 6 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image3.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile6.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Sino Mawawalan ng Trabaho?</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Oliver Austria</p>
+                        </div>
+                        <div>
+                            <p class="video-status">78,081 views &#183; 4 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image2.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile7.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Raining In Manila - Lola Amour (Lyrics)</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">ArtsMusicalVibes</p>
+                        </div>
+                        <div>
+                            <p class="video-status">435,814 views &#183; 4 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image6.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile8.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Ben&Ben - The Ones We Once Loved | Official Lyric Video</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Ben&Ben</p>
+                        </div>
+                        <div>
+                            <p class="video-status">7,497,014 view &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image7.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile9.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Raining In Manila - Lola Amour (Lyrics)</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">ArtsMusicalVibes</p>
+                        </div>
+                        <div>
+                            <p class="video-status">435,814 views &#183; 4 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image8.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile10.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> 10 years of Monster Hunter: Team Darkside 10th Anniversary</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Team Darkside</p>
+                        </div>
+                        <div>
+                            <p class="video-status">66k views &#183; 3 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image9.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile11.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> How Did We Let Mechs & Co Happen?</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Taeha Types</p>
+                        </div>
+                        <div>
+                            <p class="video-status">70k views &#183; 3 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-right: 10px; margin-left: 8px; padding-right:5px; display: flex;">
+            <hr style="flex: 1; height: 3px; background-color: rgb(226, 223, 223); border: none; " >
+        </div>
+
+        <div class="shorts-container">
+            <div class="shorts-container-title">
+                <div class="shorts-title">
+                    <div class="shorts-icon">
+                        <img src="image/icons/icon-shorts.png" alt="">
+                    </div>
+                    <div class="shorts-text">
+                        <p>Shorts</p>
+                    </div>
+                </div>
+                <div class="shorts-close-button">
+                    <img src="image/icons/close-button.png" alt="">
+                </div>
+            </div>
+
+            <div class="shorts-container-video">
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image1.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image1.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image3.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image3.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image2.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image2.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="shorts-container-preview">
+                    <div class="content-container">
+                        <div class="image-container">
+                            <img src="image/shorts content image/image2.webp" alt="">
+                        </div>
+                        <div class="shorts-info-container">
+                            <div class="content-info">
+                                <p class="title">hello world sdvdc sdcca asdasd</p>
+                                <p class="views-info">90k Views</p>
+                            </div>
+                            <div class="shorts-info-button-container">
+                                <span class="shorts-settings-icon"><img src="image/icons/ellipsis.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style=" display: flex; padding: 2px 0px 2px 0px; background-color: none;     margin-left: 10px;
+            margin-right: 10px ;">
+                <button class="flex-arrow-show">
+                <img style="background-color: none;" src="image/icons/arrow-down.png" alt=""></button>
+            </div>
+        </div>
+
+        <div style=" display: flex; margin-right: 15px; margin-left: 10px;">
+            <hr style="flex: 1; height: 3px; background-color: rgb(226, 223, 223); border: none;  margin: 0px 0px 15px 0px;" >
+        </div>
+        
+        <div style="margin-left: 0px px;margin-right: 5px; padding-top: 25px; ">
+            <div class="video-container-flex">
+                <div class="video-preview-flex">
+                    <div style="margin: 0px 8px 40px 8px;">
+                        <div>
+                            <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                        </div> 
+                        <div class="content-flex" >
+                            <div class="image-content-flex">
+                                <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                            </div>
+                            <div class="video-information-flex">
+                                <div>
+                                    <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                                </div>
+                                <div style="margin-top: 5px;">
+                                    <p class="video-author">Updated Weeb</p>
+                                </div>
+                                <div>
+                                    <p class="video-status">22k views &#183; 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="content-flex-settings">
+                                <img class="content-flex-icon" src="image/icons/ellipsis.png" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="video-preview-flex">
+                    <div style="margin: 0px 8px 40px 8px;">
+                        <div>
+                            <img class="thumbnail" src="image/video_image/image4.webp" alt="">
+                        </div> 
+                        <div class="content-flex" >
+                            <div class="image-content-flex">
+                                <img src="image/video_profile/profile5.jpg" class="video-profile"  alt=""> 
+                            </div>
+                            <div class="video-information-flex">
+                                <div>
+                                    <p class="title"> Create a Navbar using HTML and CSS | html & css tutorial</p>
+                                </div>
+                                <div style="margin-top: 5px;">
+                                    <p class="video-author">Coding with programmer</p>
+                                </div>
+                                <div>
+                                    <p class="video-status">11 views &#183; 6 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="content-flex-settings">
+                                <img class="content-flex-icon" src="image/icons/ellipsis.png" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-preview-flex">
+                    <div style="margin: 0px 8px 40px 8px;">
+                        <div>
+                            <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                        </div> 
+                        <div class="content-flex" >
+                            <div class="image-content-flex">
+                                <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                            </div>
+                            <div class="video-information-flex">
+                                <div>
+                                    <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                                </div>
+                                <div style="margin-top: 5px;">
+                                    <p class="video-author">Updated Weeb</p>
+                                </div>
+                                <div>
+                                    <p class="video-status">22k views &#183; 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="content-flex-settings">
+                                <img class="content-flex-icon" src="image/icons/ellipsis.png" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="video-preview-flex">
+                    <div style="margin: 0px 8px 40px 8px;">
+                        <div>
+                            <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                        </div> 
+                        <div class="content-flex" >
+                            <div class="image-content-flex">
+                                <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                            </div>
+                            <div class="video-information-flex">
+                                <div>
+                                    <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                                </div>
+                                <div style="margin-top: 5px;">
+                                    <p class="video-author">Updated Weeb</p>
+                                </div>
+                                <div>
+                                    <p class="video-status">22k views &#183; 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="content-flex-settings">
+                                <img class="content-flex-icon" src="image/icons/ellipsis.png" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview-flex">
+                    <div style="margin: 0px 8px 40px 8px;">
+                        <div>
+                            <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                        </div> 
+                        <div class="content-flex" >
+                            <div class="image-content-flex">
+                                <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                            </div>
+                            <div class="video-information-flex">
+                                <div>
+                                    <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                                </div>
+                                <div style="margin-top: 5px;">
+                                    <p class="video-author">Updated Weeb</p>
+                                </div>
+                                <div>
+                                    <p class="video-status">22k views &#183; 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="content-flex-settings">
+                                <img class="content-flex-icon" src="image/icons/ellipsis.png" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style=" display: flex; padding: 2px 0px 2px 0px; background-color: none;     margin-left: 10px;
+            margin-right: 10px ;">
+                <button class="video-arrow-show">
+                <img style="background-color: none;" src="image/icons/arrow-down.png" alt=""></button>
+            </div>
+        </div>
+
+        <div style=" display: flex; margin-right: 15px; margin-left: 10px; ">
+            <hr style="flex: 1; height: 3px; background-color: rgb(226, 223, 223); border: none; margin: 0px 0px 15px 0px;" >
+        </div>
+
+        <div class="video-container">
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Updated Weeb</p>
+                        </div>
+                        <div>
+                            <p class="video-status">22k views &#183; 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image4.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile5.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Create a Navbar using HTML and CSS | html & css tutorial</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Coding with programmer</p>
+                        </div>
+                        <div>
+                            <p class="video-status">11 views &#183; 6 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image3.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile6.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Sino Mawawalan ng Trabaho?</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Oliver Austria</p>
+                        </div>
+                        <div>
+                            <p class="video-status">78,081 views &#183; 4 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image2.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile7.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Raining In Manila - Lola Amour (Lyrics)</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">ArtsMusicalVibes</p>
+                        </div>
+                        <div>
+                            <p class="video-status">435,814 views &#183; 4 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image6.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile8.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Ben&Ben - The Ones We Once Loved | Official Lyric Video</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Ben&Ben</p>
+                        </div>
+                        <div>
+                            <p class="video-status">7,497,014 view &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image7.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile9.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Raining In Manila - Lola Amour (Lyrics)</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">ArtsMusicalVibes</p>
+                        </div>
+                        <div>
+                            <p class="video-status">435,814 views &#183; 4 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image8.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile10.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> 10 years of Monster Hunter: Team Darkside 10th Anniversary</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Team Darkside</p>
+                        </div>
+                        <div>
+                            <p class="video-status">66k views &#183; 3 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image9.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile11.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> How Did We Let Mechs & Co Happen?</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Taeha Types</p>
+                        </div>
+                        <div>
+                            <p class="video-status">70k views &#183; 3 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image5.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile4.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> BLUE: MAXIMUM OUTPUT!!! AGITO ELIMINATED!!! Jujutsu Kaisen...</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Updated Weeb</p>
+                        </div>
+                        <div>
+                            <p class="video-status">22k views &#183; 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image4.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile5.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Create a Navbar using HTML and CSS | html & css tutorial</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Coding with programmer</p>
+                        </div>
+                        <div>
+                            <p class="video-status">11 views &#183; 6 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div>
+                    <img class="thumbnail" src="image/video_image/image3.webp" alt="">
+                </div> 
+                <div class="content-grid" >
+                    <div class="image-content">
+                        <img src="image/video_profile/profile6.jpg" class="video-profile"  alt=""> 
+                    </div>
+                    <div class="video-information">
+                        <div>
+                            <p class="title"> Sino Mawawalan ng Trabaho?</p>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <p class="video-author">Oliver Austria</p>
+                        </div>
+                        <div>
+                            <p class="video-status">78,081 views &#183; 4 days ago</p>
+                        </div>
+                    </div>
+                    <div class="content-grid-settings">
+                        <img src="image/icons/ellipsis.png" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </main>
+    
+    <script>
+        const search_input =  document.querySelector('.search-input');
+        const parent_container = document.querySelector('.search-container');
+        const close_button = document.querySelector('.close-button');
+        search_input.addEventListener('focus', () => {
+            parent_container.style.border = '1px solid blue';
+            parent_container.style.margin = '0px 0px 0px 0px';
+        } );
+
+        search_input.addEventListener('blur', () => {
+            parent_container.style.border = "1px solid rgb(199, 199, 199)";
+            parent_container.style.margin = '0px 0px 0px 32px';
+        } );
+
+        search_input.addEventListener('input', () => {
+           let input_value = search_input.value;
+           console.log(input_value);
+            if(input_value == "" ) {
+                close_button.style.display = "none"
+                
+            }else {
+                close_button.style.display = "inline"
+            }
+        });
+
+        close_button.addEventListener('click', () => {
+            search_input.focus();
+            search_input.value = "";
+            close_button.style.display = "none";
+        });
+
+
+        const content = document.querySelector('.category-content');
+        const rightArrow = document.querySelector('#right-arrow');
+        const leftArrow = document.querySelector('#left-arrow');
+        const leftArrowContainer = document.querySelector('.left-arrow-container');
+        const rightArrowContainer = document.querySelector('.right-arrow-container');
+        let currentTranslateX = 0;
+        leftArrowContainer.style.display = 'none';
+
+        
+        rightArrow.addEventListener('click', () => {
+            currentTranslateX -= 80;
+            content.style.transform = `translateX(${currentTranslateX}px)`;
+
+            if (currentTranslateX < 0 ) {
+                leftArrowContainer.style.display = 'flex';
+            
+            } else {
+                leftArrowContainer.style.display = 'none';
+            }
+
+            if (currentTranslateX > -250 ) {
+                rightArrowContainer.style.display = 'flex';
+            
+            } else {
+                rightArrowContainer.style.display = 'none';
+            }
+        });
+
+        leftArrow.addEventListener('click', () => {
+            currentTranslateX += 80;
+            content.style.transform = `translateX(${currentTranslateX}px)`;
+            if (currentTranslateX < 0 ) {
+                leftArrowContainer.style.display = 'flex';
+            } else {
+                leftArrowContainer.style.display = 'none';
+            }
+
+            if (currentTranslateX >= -250 ) {
+                rightArrowContainer.style.display = 'flex';
+            
+            } else {
+                rightArrowContainer.style.display = 'none';
+            }
+        });
+
+        const flex_arrow_button = document.querySelector('.flex-arrow-show'); 
+        
+        const shorts_container_video = document.querySelector('.shorts-container-video');
+        flex_arrow_button.addEventListener('click', ()=> {
+            shorts_container_video.style.flexWrap = "wrap";
+            flex_arrow_button.style.display = "none";
+        })
+
+        const video_arrow_button = document.querySelector('.video-arrow-show'); 
+        
+        const video_container_video = document.querySelector('.video-container-flex');
+        video_arrow_button.addEventListener('click', ()=> {
+            video_container_video.style.flexWrap = "wrap";
+            video_arrow_button.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
