@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<link rel="stylesheet" href="css/style.css">
+
 <body>
     <nav class="header">
         <div class="left-section">
@@ -24,58 +29,75 @@
                     <input type="text" placeholder="Search" class="search-input">   
                     <button class="close-button">
                         <img src="image/icons/close-button.png" alt="" height="23" style="padding-top: 5px;">
+
+                       
                     </button>
                 </div>
 
                 <button class="search-button">
                     <img src="image/icons/icon-search.png" style="height: 20px;" alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+
+                <button class="search-button-sm">
+                    <img src="image/icons/icon-search.png" style="height: 20px;" alt="">
+                    <div class="tooltip">Search</div>
                 </button>
 
                 <button class="mic-button-container">
                     <img src="image/icons/icon-microphone.png" alt="" class="mic-button-icon">
-
-                    <div class="button-description">
-                        <span></span>
-                        Mic
-                    </div>
+                    <div class="tooltip">Search with your voice</div>
                 </button>
             </div>
         </div>
 
         <div class="right-section">
             <div class="right-container">
-                <img class="icon-right create-icon" src="image/icons/icon-create-video.png" alt="" >
+                <button class="create-button">
+                    <img class="icon-right create-icon" src="image/icons/icon-create-video.png" alt="" >
+                    <div class="tooltip">Create</div>
+                </button>
+                
+                <button class="notification-button">
+                    <img class="icon-right notification-icon" src="image/icons/icon-notification.png" alt="">
+                    <div class="tooltip">Notification</div>
+                </button>
 
-                <img class="icon-right notification-icon" src="image/icons/icon-notification.png" alt="">
-
-                <img src="image/user_profile.jpg" class="profile_pic"alt="" >
+                <button class="profile-button">
+                    <img src="image/user_profile.jpg" class="profile_pic"alt="" >
+                </button>
+             
             </div>
         </div>
     </nav>
 
     <nav class="sidebar">
-        <div class="sidebar-content">
+        <div class="sidebar-content home-button">
             <img src="image/icons/icon-home.png" height="21" alt="">
             <p >Home</p>
+            <div class="tooltip">Home</div>
         </div>
-        <div class="sidebar-content">
+        <div class="sidebar-content shorts-button">
             <img src="image/icons/icon-shorts.png" height="21" alt="">
             <p>Shorts</p>
+            <div class="tooltip">Shorts</div>
         </div>
-        <div class="sidebar-content">
+        <div class="sidebar-content subscription-button">
             <img src="image/icons/icon-subscription.png" height="21" alt="">
             <p>Subscriptions</p>
+            <div class="tooltip">Subscriptions</div>
         </div>
-        <div class="sidebar-content">
+        <div class="sidebar-content library-button">
             <img src="image/icons/icon-library.png" height="21" alt="">
             <p>Library</p>
+            <div class="tooltip">Library</div>
         </div>
     </nav>
 
     <main>
         <div style="
         background-color: white;   
-            margin-left: 8px;
+        padding-left: 8px;
             margin-right: 8px;
             height: 55px;
             display: flex;
@@ -901,99 +923,7 @@
 
     </main>
     
-    <script>
-        const search_input =  document.querySelector('.search-input');
-        const parent_container = document.querySelector('.search-container');
-        const close_button = document.querySelector('.close-button');
-        search_input.addEventListener('focus', () => {
-            parent_container.style.border = '1px solid blue';
-            parent_container.style.margin = '0px 0px 0px 0px';
-        } );
-
-        search_input.addEventListener('blur', () => {
-            parent_container.style.border = "1px solid rgb(199, 199, 199)";
-            parent_container.style.margin = '0px 0px 0px 32px';
-        } );
-
-        search_input.addEventListener('input', () => {
-           let input_value = search_input.value;
-           console.log(input_value);
-            if(input_value == "" ) {
-                close_button.style.display = "none"
-                
-            }else {
-                close_button.style.display = "inline"
-            }
-        });
-
-        close_button.addEventListener('click', () => {
-            search_input.focus();
-            search_input.value = "";
-            close_button.style.display = "none";
-        });
-
-
-        const content = document.querySelector('.category-content');
-        const rightArrow = document.querySelector('#right-arrow');
-        const leftArrow = document.querySelector('#left-arrow');
-        const leftArrowContainer = document.querySelector('.left-arrow-container');
-        const rightArrowContainer = document.querySelector('.right-arrow-container');
-        let currentTranslateX = 0;
-        leftArrowContainer.style.display = 'none';
-
-        
-        rightArrow.addEventListener('click', () => {
-            currentTranslateX -= 80;
-            content.style.transform = `translateX(${currentTranslateX}px)`;
-
-            if (currentTranslateX < 0 ) {
-                leftArrowContainer.style.display = 'flex';
-            
-            } else {
-                leftArrowContainer.style.display = 'none';
-            }
-
-            if (currentTranslateX > -250 ) {
-                rightArrowContainer.style.display = 'flex';
-            
-            } else {
-                rightArrowContainer.style.display = 'none';
-            }
-        });
-
-        leftArrow.addEventListener('click', () => {
-            currentTranslateX += 80;
-            content.style.transform = `translateX(${currentTranslateX}px)`;
-            if (currentTranslateX < 0 ) {
-                leftArrowContainer.style.display = 'flex';
-            } else {
-                leftArrowContainer.style.display = 'none';
-            }
-
-            if (currentTranslateX >= -250 ) {
-                rightArrowContainer.style.display = 'flex';
-            
-            } else {
-                rightArrowContainer.style.display = 'none';
-            }
-        });
-
-        const flex_arrow_button = document.querySelector('.flex-arrow-show'); 
-        
-        const shorts_container_video = document.querySelector('.shorts-container-video');
-        flex_arrow_button.addEventListener('click', ()=> {
-            shorts_container_video.style.flexWrap = "wrap";
-            flex_arrow_button.style.display = "none";
-        })
-
-        const video_arrow_button = document.querySelector('.video-arrow-show'); 
-        
-        const video_container_video = document.querySelector('.video-container-flex');
-        video_arrow_button.addEventListener('click', ()=> {
-            video_container_video.style.flexWrap = "wrap";
-            video_arrow_button.style.display = "none";
-        })
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

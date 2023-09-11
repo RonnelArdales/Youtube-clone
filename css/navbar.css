@@ -1,0 +1,286 @@
+
+.header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 98% ;
+    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 20px;
+    z-index: 100;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+}
+
+.left-section {
+    width: 170px;
+    margin-left: 2px;
+    padding-top: 3px ;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    height: 21px;
+    width: 21px;
+    padding: 8px;
+}
+
+.menu-icon:hover {
+    background-color: rgb(226, 225, 225);
+    border-radius: 50%;
+}
+
+.youtube-icon-container {
+    margin-left: 15px;
+}
+.youtube-icon {
+    height: 20px;
+}
+
+.middle-section {
+    flex: 1;
+    height: 100%;
+    max-width: 735px;
+    display: flex;
+    align-items: center;
+}
+
+.middle-container {
+    height: 38px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.search-container {
+    display: flex;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.05);
+    height: 100%;
+    flex: 1;
+    padding-left:  17px;
+    width: 0;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 45px;
+    align-items: center;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.search-input {
+    border:none;
+    flex:1;
+    height: 21px;
+    font-size: 20px;
+    padding: 0;
+    width: 0;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input::placeholder{
+    font-size: 16px;
+    line-height: 0;
+    align-self: center;
+}
+
+.close-button {
+    height: 100%;
+    width: 43px;
+    padding: 0px;
+    border: none;
+    display: none;
+    background-color: transparent;
+}
+
+.close-button:hover  {
+    background-color: rgb(226, 225, 225);
+    border-radius: 50px;
+    
+}
+
+.search-button {
+    height: 40px;
+    margin-left: -1px;
+    width: 60px;
+    padding-top: 3px;
+    border-radius: 0px 30px 30px 0px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.search-button-sm {
+    height: 100%;
+    margin-left: 20px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;   
+    display: none;
+}
+
+
+
+
+
+.mic-button-container {
+    height: 100%;
+    margin-left: 20px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.mic-button-container,
+.search-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+
+
+.mic-button-container .tooltip, 
+.search-button .tooltip,
+.notification-button .tooltip,
+.search-button-sm .tooltip, 
+.create-button .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 10px 8px 10px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: -45px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+.mic-button-container:hover .tooltip,
+.search-button:hover .tooltip,
+.create-button:hover .tooltip,
+.notification-button:hover .tooltip,
+.search-button-sm:hover .tooltip
+ {
+    opacity: 1;
+} 
+
+.mic-button-container:hover,
+.search-button:hover,
+.search-button-sm:hover {
+    background-color: rgb(226, 225, 225);
+} 
+
+
+.mic-button-icon {
+    width: 22px; 
+    padding-top: 3px;
+}
+
+.button-description {
+    position: absolute; 
+    top: 60px;
+    background-color: gray; 
+    padding: 5px 10px 5px 10px; 
+    color: white;
+    display: none;
+    opacity: 0;
+}
+ 
+.right-section {
+    width: 220px;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    flex-shrink: 0;
+    align-items: center;
+    
+}
+
+.right-container {
+    
+    padding-right: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-button, .create-button {
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding-top: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+}
+
+.profile-button {
+    border: none;
+    background-color: transparent;
+}
+
+.notification-icon, .create-icon {
+    width: 22px; 
+}
+
+.profile_pic {
+    height: 33px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.create-button:hover, .notification-button:hover {
+    background-color: rgb(226, 225, 225);
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:655px) {
+    .search-container{
+        display: none;
+    }
+
+    .right-section{
+        width: 150px;
+    }
+    .middle-section, 
+    .middle-container {
+       justify-content: flex-end;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .mic-button-container,
+    .search-button-sm{
+        background-color: white;
+        margin-left: 0px;
+    }
+
+    .search-button-sm {
+        display: inline;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.15s;
+    }
+
+    .search-button-sm img {
+        padding-top: 5px;
+    }
+}
